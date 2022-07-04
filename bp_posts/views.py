@@ -24,7 +24,7 @@ def page_posts_index():
     return render_template("posts_index.html", posts=all_posts)
 
 
-@bp_posts.route("/posts/<int:pk>/")
+@bp_posts.route("/post/<int:pk>/")
 def page_posts_single(pk: int):
     """Страничка одного постоа"""
     post: Any[Post, None] = post_dao.get_by_pk(pk)

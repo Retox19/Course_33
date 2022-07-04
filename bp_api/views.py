@@ -1,6 +1,7 @@
+import logging
 from typing import Optional
 
-from flask import Blueprint, jsonify, abort, logging
+from flask import Blueprint, jsonify, abort
 
 from bp_posts.dao.comment import Comment
 from bp_posts.dao.post import Post
